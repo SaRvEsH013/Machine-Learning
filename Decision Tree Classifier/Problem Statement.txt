@@ -1,0 +1,44 @@
+This question is designed to help you understand the working of a decision tree (DT). You will find a
+dataset, here, containing information used to classify penguins into 3 species.
+You need to implement a classification decision tree (DT) from scratch [you are not permitted to use
+any 3rd-party library’s function for the classifier e.g. scikit. You may, however, use built-in functions for
+auxiliary tasks like train/test split, etc.].
+● With respect to the cost function to be used to find splits, everywhere in this question, you
+have to implement Gini Index.
+
+The implementation includes the following tasks. -
+
+1. Perform pre-processing and visualization of the dataset. Perform categorical encoding
+wherever applicable and split the data into train and test sets.
+
+2. Implement the cost function.
+
+3. In order for the decision tree to work successfully, continuous variables need to be converted
+to categorical variables first. To do this, you need to implement a decision function that makes
+this split. Let us call that cont_to_cat(). The details of the function are the following.
+
+	a. Assume that the continuous variables are independent of each other i.e. assuming 2
+	continuous variables A and B, the split of A does not in any way affect the split you will
+	perform in B.
+
+	b. The continuous variables should only be split into 2 categories, and the optimal split is
+	one that divides the samples the best, based on the value of the function you have
+	been allotted (as per your roll number).
+
+4. After step 2, all the attributes would have categorical values, so now you can go ahead and
+implement the training function. This would include implementing the following helper
+functions:
+
+	a. Get the attribute that leads to the best split
+	b. Make that split
+	c. Repeat these steps for the newly-created split
+
+5. The DT should also include the following properties in the train function
+	a. There should be a max depth that should be defined i.e. a depth after which the tree
+	shouldn’t be allowed to grow.
+	b. The algorithm should self-identify when there is no information gain being done, i.e. the
+	model has plateaued in it’s training and shouldn’t grow further. 
+
+6. Write a function which is responsible for classification (i.e. at test time).
+
+7. Find out the accuracy you get on the test data (overall and class-wise). 
