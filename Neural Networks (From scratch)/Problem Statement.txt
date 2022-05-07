@@ -1,0 +1,38 @@
+In this exercise, you need to predict the life of Abalone - a kind of shellfish, based on a number of
+characteristics (sex, length, diameter, height, weights in different forms, etc.). Model it as a
+classification problem to predict the class (based on the number of rings). You need to use the PyTorch 
+library to create a neural network with the following specification,
+split the data and find out the accuracy on the test set after training
+
+Decide on the hidden layer size on your own. Use sigmoid activation for the output layer and tanh for
+the hidden layers. The ‘+’ Symbol represents the addition of the outputs of the 2 branches.
+
+
+
+You have been given a dataset here. It consists of different characteristics of dry beans (consider
+only: area, perimeter, axes lengths, eccentricity, roundness, aspect ratio, and convex area - 7
+features). You need to perform classification into different varieties (Cali, Bombay, Barbunya, etc.).
+For this classification, you need to use a multi-layer perceptron.
+
+	a. Preprocess & visualize the data. Create train, val, and test splits but take into consideration
+	the class distribution (Hint: Look up stratified splits). 
+
+	b. Implement a multi-layer perceptron from scratch. This would include the following 
+
+		i. Write activation functions.
+		ii. Forward propagate the input.
+		iii. Backward propagate the error.
+		iv. Train the network using stochastic gradient descent.
+		v. Predict the output for a given test sample and compute the accuracy.
+
+	c. Now experiment with different activation functions (at least 3 & to be written from scratch)
+	and comment (in the report) on how the accuracy varies. Create plots to support your
+	arguments. 
+
+	d. Experiment with different weight initialization: Random, Zero & Constant. Create plots to
+	support your arguments.
+
+	e. Change the number of hidden nodes and comment upon the training and accuracy. Create
+	plots to support your arguments.
+
+	f. Add a provision to save and load weights in the MLP. 
