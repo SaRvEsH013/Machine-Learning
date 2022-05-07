@@ -6,7 +6,7 @@ auxiliary tasks like train/test split, etc.].
 ● With respect to the cost function to be used to find splits, everywhere in this question, you
 have to implement Gini Index.
 
-The implementation includes the following tasks. -
+The implementation includes the following tasks. 
 
 1. Perform pre-processing and visualization of the dataset. Perform categorical encoding
 wherever applicable and split the data into train and test sets.
@@ -39,6 +39,6 @@ functions:
 	b. The algorithm should self-identify when there is no information gain being done, i.e. the
 	model has plateaued in it’s training and shouldn’t grow further. 
 
-6. Write a function which is responsible for classification (i.e. at test time).
+6. Write a function which is responsible for classification .
 
-7. Find out the accuracy you get on the test data (overall and class-wise). 
+7. Find out the accuracy you get on the test data (overall and class-wise).
