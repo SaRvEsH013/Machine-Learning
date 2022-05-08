@@ -1,0 +1,3 @@
+Wine Data : https://archive.ics.uci.edu/ml/datasets/wine
+Fashion MNIST : https://www.kaggle.com/datasets/zalando-research/fashionmnist
+Brain Cancer : https://www.kaggle.com/c/1056lab-brain-cancer-classification/data
